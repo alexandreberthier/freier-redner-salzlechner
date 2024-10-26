@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <url>
+        <loc>https://www.freier-redner-tom.at/de/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.freier-redner-tom.at/de/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.freier-redner-tom.at/en/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.freier-redner-tom.at/"/>
+        <lastmod>2024-10-25</lastmod>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://www.freier-redner-tom.at/de/uebermich</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.freier-redner-tom.at/de/uebermich"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.freier-redner-tom.at/en/uebermich"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.freier-redner-tom.at/"/>
+        <lastmod>2024-10-25</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.freier-redner-tom.at/de/hochzeit</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.freier-redner-tom.at/de/hochzeit"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.freier-redner-tom.at/en/hochzeit"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.freier-redner-tom.at/"/>
+        <lastmod>2024-10-25</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.freier-redner-tom.at/de/willkommensfest</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.freier-redner-tom.at/de/willkommensfest"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.freier-redner-tom.at/en/willkommensfest"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.freier-redner-tom.at/"/>
+        <lastmod>2024-10-25</lastmod>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.freier-redner-tom.at/de/lebens-und-trauerfeier</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.freier-redner-tom.at/de/lebens-und-trauerfeier"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.freier-redner-tom.at/en/lebens-und-trauerfeier"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.freier-redner-tom.at/"/>
+        <lastmod>2024-10-25</lastmod>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.freier-redner-tom.at/de/moderation</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.freier-redner-tom.at/de/moderation"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.freier-redner-tom.at/en/moderation"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.freier-redner-tom.at/"/>
+        <lastmod>2024-10-25</lastmod>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://www.freier-redner-tom.at/de/impressum</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.freier-redner-tom.at/de/impressum"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.freier-redner-tom.at/en/impressum"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.freier-redner-tom.at/"/>
+        <lastmod>2024-10-25</lastmod>
+        <priority>0.5</priority>
+    </url>
+
+</urlset>

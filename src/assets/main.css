@@ -1,0 +1,163 @@
+
+@font-face {
+    font-family: Playfair;
+    src: url("../assets/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Afacad;
+    src: url("../assets/fonts/AfacadFlux-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    --beige:#9fad88;
+    --white: #ffffff;
+    --dark-green: #11423e;
+    --darker-green: #0d322f;
+}
+
+[data-theme="dark"] {
+    --beige: #2c3e50;
+    --white: #2c3e50;
+    --dark-green: #9fad88;
+    --darker-green: #bdc3c7;
+}
+
+html, body {
+    background-color: var(--white);
+}
+
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--white);
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    font-family: Playfair, sans-serif;
+    color: var(--dark-green)
+}
+
+p {
+    margin: 0;
+    font-family: Afacad, sans-serif;
+    font-size: 20px;
+    color: var(--dark-green)
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 1.2;
+
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 1.3;
+}
+
+label {
+    font-family: Afacad, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--darker-green);
+    box-sizing: border-box;
+
+    &.active {
+        font-weight: bold;
+    }
+
+}
+
+.link {
+    text-decoration: none;
+    color: var(--dark-green);
+    position: relative;
+    font-family:Afacad, sans-serif;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--dark-green);
+        transition: all 150ms ease-in-out;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+.content-wrapper {
+    width: 320px;
+    margin: 130px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+@media (min-width: 740px) {
+    .content-wrapper {
+        width: 620px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .content-wrapper {
+        margin: 150px auto 0 auto;
+        width: 860px;
+        gap: 90px;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .content-wrapper {
+        margin: 170px auto 0 auto;
+        width: 1260px;
+    }
+}
