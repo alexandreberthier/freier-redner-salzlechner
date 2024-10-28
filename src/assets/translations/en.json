@@ -158,27 +158,40 @@
   "moderationFaqAnswer5": "Whether it's a corporate event, anniversary, wedding, or private celebration – a professional moderator ensures your event is both smooth and entertaining.",
   "moderationLinkHeader": "Celebration and moderation",
 
-  "homeTitle": "Your Unique Ceremony – Wedding, Funeral & Naming Ceremony | Tom Salzlechner – Freelance Speaker",
-  "homeDescription": "As a freelance speaker, I accompany you through weddings, funerals, naming ceremonies, and special occasions. Let's create unforgettable moments together.",
+  "homeTitle": "Your Unique Ceremony – Wedding, Funeral & Welcome Ceremony | Tom Salzlechner",
+  "homeDescription": "I accompany you as a freelance speaker through weddings, funerals, welcome ceremonies, and special moments. Let's create unforgettable ceremonies together.",
 
-  "aboutTitle": "About Me – Freelance Speaker for Your Special Occasions | Tom Salzlechner – Freelance Speaker",
-  "aboutDescription": "Learn more about me and my work as a freelance speaker for weddings, funerals, and naming ceremonies. Let's tell your story together.",
+  "aboutTitle": "About Me – Freelance Speaker for Special Occasions | Tom Salzlechner",
+  "aboutDescription": "Learn more about me and my work as a freelance speaker for weddings, funerals, and welcome ceremonies. Let's tell your story together.",
 
-  "weddingTitle": "Your Personal Wedding Ceremony | Tom Salzlechner – Freelance Speaker",
-  "weddingDescription": "Personalized wedding ceremonies that celebrate your love. Together, we create an unforgettable moment that reflects who you are.",
+  "weddingTitle": "Your Wedding Ceremony | Tom Salzlechner - Freelance Speaker",
+  "weddingDescription": "Personalized wedding ceremonies that celebrate your love. Together, we create an unforgettable moment.",
 
-  "childCelebrationTitle": "Heartfelt Naming Ceremony for Your Child | Tom Salzlechner – Freelance Speaker",
-  "childCelebrationDescription": "Create a loving naming ceremony for your child. Let's celebrate the arrival of your little one with a personal and warm ceremony.",
+  "childCelebrationTitle": "Welcome Ceremony for Your Child | Tom Salzlechner",
+  "childCelebrationDescription": "Celebrate the arrival of your child with a personalized ceremony. Let's warmly welcome this new chapter together.",
 
-  "celebrationsTitle": "Dignified Funeral and Life Celebrations | Tom Salzlechner – Freelance Speaker",
-  "celebrationsDescription": "Together, we create a personal and dignified farewell for your loved one. Let’s celebrate the beautiful memories.",
+  "celebrationsTitle": "Life & Funeral Ceremonies | Tom Salzlechner",
+  "celebrationsDescription": "Create a dignified farewell for your loved one. Let's celebrate the cherished memories together.",
 
-  "moderationTitle": "Professional Moderation for Events & Occasions | Tom Salzlechner – Freelance Speaker",
-  "moderationDescription": "Host your corporate event or special occasion with professional and humorous moderation. Let's create unforgettable moments for your guests.",
+  "moderationTitle": "Event Moderation for Celebrations & Corporate Events | Tom Salzlechner",
+  "moderationDescription": "Accompany your corporate event or celebration with professional moderation. Let's create unforgettable moments together.",
 
-  "imprintTitle": "Imprint | Tom Salzlechner – Freelance Speaker",
-  "imprintDescription": "Legal information and contact details of Tom Salzlechner. Learn more about the owner of this website."
+  "imprintTitle": "Imprint | Tom Salzlechner",
+  "imprintDescription": "Legal information and contact details for Tom Salzlechner, the owner of this website.",
 
 
+  "quote4": "I want to honor people in a way that guests won't complain about the length of the ceremony.",
+  "quoteChild1": "A child turns life upside down, so let's welcome this new life.",
+  "quoteChild2": "Children are our future, and it's never too early to say hello to the future.",
+  "quoteChild3": "If new life isn't celebrated, then what is?",
+  "quoteChild4": "We are getting to know a new love – so let's take a moment to appreciate it with our loved ones!",
+
+  "quoteFuneral1": "Don't just mourn the death, celebrate the life and memories.",
+  "quoteFuneral2": "A loved one has left us, and finding the right words is difficult but important!",
+  "quoteFuneral3": "Let’s create a celebration of life, rather than a mourning ceremony.",
+
+  "quoteModeration1": "Every celebration deserves the perfect setting!",
+  "quoteModeration2": "I will find the right words for your event too.",
+  "quoteModeration3": "Together, we can create not just a moment, but lasting memories."
 
 }

@@ -29,11 +29,9 @@
   "guestComment3": "Ich durfte eine Rede live erleben, und es war einfach magisch! Die Mischung aus schönen Worten, Zitaten und Humor machte diesen Moment unvergesslich. Vielen Dank!",
   "dontForgetField": "Vergiss dieses Feld nicht!",
   "formSuccessMessage": "Anfrage erfolgreich gesendet!",
-  "formErrorMessage" : "Anfrage konnte nicht gesendet werden!",
+  "formErrorMessage": "Anfrage konnte nicht gesendet werden!",
   "invalidPhone": "Ungültige Telefonnummer",
   "invalidEmail": "Ungültige E-Mail-Adresse",
-
-
   "homeHeader": "Mit den Gästen statt vor den Gästen",
   "homeSubText": "Egal ob Hochzeit, Lebensfeier/Trauerfeier, Kinderwillkommensfest oder ein ganz besonderer Anlass – mit den richtigen Worten und eurer Geschichte machen wir Eure Zeremonie zu einem einzigartigen Moment",
   "homeBannerHeader": "Deine einzigartige Zeremonie – ganz nach deinen Wünschen",
@@ -57,7 +55,6 @@
   "homeFaqAnswer4": "Je früher, desto besser! Idealerweise meldet ihr euch 6 bis 12 Monate vor dem gewünschten Termin, damit genügend Zeit für die Vorbereitung bleibt.",
   "homeFaqQuestion5": "In welchem Umkreis bist du tätig?",
   "homeFaqAnswer5": "Ich bin flexibel und arbeite in der Region und darüber hinaus. Gerne komme ich auch zu einer Location eurer Wahl – fragt einfach nach.",
-
   "aboutHeader": "Über mich",
   "aboutSubText": "Gemeinsam gestalten wir eine unvergessliche Zeremonie, die eure Geschichte und Wünsche auf besondere Weise zum Ausdruck bringt.",
   "aboutMainTextHeader": "Hallo Zusammen!",
@@ -79,7 +76,6 @@
   "aboutSkill2": "Trauung, Kinderwillkommensfest",
   "aboutSkill3": "Liebt Pizza,gute Serien und redet gern",
   "aboutSkill4": "Zertifizierter Freier Redner (ZFR)",
-
   "weddingHeader": "Hochzeit",
   "weddingSubText": "Gemeinsam gestalten wir eine unvergessliche Zeremonie, die eure Geschichte und Wünsche auf besondere Weise zum Ausdruck bringt.",
   "weddingMainTextHeader": "Eure Liebe, eure Zeremonie",
@@ -95,7 +91,6 @@
   "weddingFaqAnswer4": "Ja, ich bin flexibel und reise gerne an euren Wunschort – sei es im In- oder Ausland. Wichtig ist, dass die Location zu euch passt und eine schöne Atmosphäre für eure Trauung bietet.",
   "weddingFaqQuestion5": "Wie lange dauert eine freie Trauung?",
   "weddingFaqAnswer5": "Eine freie Trauung dauert in der Regel zwischen 30 und 45 Minuten, je nach Ablauf und individuellen Beiträgen. Die Dauer kann selbstverständlich an eure Wünsche angepasst werden.",
-
   "funeralHeader": "Lebens- / Trauerfeier",
   "funeralSubText": "Gemeinsam schaffen wir einen würdevollen Abschied, der das Leben eures geliebten Menschen in all seinen Facetten liebevoll in Erinnerung ruft.",
   "funeralMainTextHeader": "Ein würdevoller Abschied",
@@ -111,7 +106,6 @@
   "funeralFaqAnswer4": "In der Regel dauert eine Feier etwa 30 bis 60 Minuten, je nachdem, wie viele Beiträge und Rituale integriert werden. Die Dauer kann flexibel an die Wünsche der Familie angepasst werden.",
   "funeralFaqQuestion5": "In welcher Umgebung kann eine Lebens- oder Trauerfeier stattfinden?",
   "funeralFaqAnswer5": "Die Feier kann an jedem Ort stattfinden, der für die Familie und die verstorbene Person von Bedeutung ist. Ob im Freien, in einer Trauerhalle oder an einem besonderen Ort – ich bin flexibel und unterstütze euch bei der Auswahl des passenden Rahmens.",
-
   "childCelebrationHeader": "Kinderwillkommensfest",
   "childCelebrationHeaderSmall": "Kinder-Willkommensfest",
   "childCelebrationSubText": "Gemeinsam feiern wir die Ankunft eures kleinen Schatzes mit einer liebevollen und fröhlichen Zeremonie – ganz nach euren Wünschen.",
@@ -128,7 +122,6 @@
   "childCelebrationFaqAnswer4": "In der Regel dauert eine Feier etwa 30 bis 60 Minuten, je nachdem, wie viele Beiträge und Rituale integriert werden. Die Dauer kann flexibel an die Wünsche der Familie angepasst werden.",
   "childCelebrationFaqQuestion5": "In welcher Umgebung kann eine Lebens- oder Trauerfeier stattfinden?",
   "childCelebrationFaqAnswer5": "Die Feier kann an jedem Ort stattfinden, der für die Familie und die verstorbene Person von Bedeutung ist. Ob im Freien, in einer Trauerhalle oder an einem besonderen Ort – ich bin flexibel und unterstütze euch bei der Auswahl des passenden Rahmens.",
-
   "imprintHeader": "Impressum",
   "imprintSectionHeader1": "Angaben gemäß § 5 E-Commerce-Gesetz (ECG):",
   "imprintSectionHeader2": "Kontakt:",
@@ -145,8 +138,6 @@
   "imprintSectionText8": "Unser Angebot enthält Links zu externen Websites, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.",
   "imprintSectionHeader9": "Urheberrecht:",
   "imprintSectionText9": "<p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem österreichischen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.</p> <p>Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>",
-
-
   "moderationHeader": "Besondere Feiern erfordern besondere Worte",
   "moderationSubText": "Hochzeiten, Lebensfeiern und Kinderwillkommensfeste beschreiben meist neue Abschnitte im Leben von Menschen – natürlich gibt es noch weitere Momente oder Ereignisse, die es wert sind, gemeinsam anzuhalten. Gerne begleite ich jegliche Art von Feiern, Zeremonien oder Veranstaltungen.",
   "moderationMainTextHeader": "Firmenfeiern & Jubiläen",
@@ -164,25 +155,37 @@
   "moderationFaqAnswer5": "Ob Firmenfeier, Jubiläum, Hochzeit oder private Feier – eine professionelle Moderation sorgt dafür, dass dein Event harmonisch und unterhaltsam verläuft.",
   "moderationLinkHeader": "Feier und Moderation",
 
+  "homeTitle": "Deine Zeremonie – Hochzeit, Trauerfeier & Willkommensfest | Tom Salzlechner",
+  "homeDescription": "Ich begleite Dich als freier Redner durch Hochzeiten, Trauerfeiern, Willkommensfeste und besondere Momente. Lass uns unvergessliche Zeremonien schaffen.",
 
-  "homeTitle": "Deine einzigartige Zeremonie – Hochzeit, Trauerfeier & Kinderwillkommensfest | Tom Salzlechner - Freier Redner",
-  "homeDescription": "Ich begleite Dich als freier Redner durch Hochzeiten, Trauerfeiern, Kinderwillkommensfeste und besondere Momente. Lass uns gemeinsam unvergessliche Zeremonien schaffen.",
+  "aboutTitle": "Über mich – Freier Redner für besondere Anlässe | Tom Salzlechner",
+  "aboutDescription": "Erfahre mehr über mich und meine Arbeit als freier Redner für Hochzeiten, Trauerfeiern und Willkommensfeste. Lass uns Deine Geschichte erzählen.",
 
-  "aboutTitle": "Über mich – Freier Redner für Deine besonderen Anlässe | Tom Salzlechner - Freier Redner",
-  "aboutDescription": "Erfahre mehr über mich und meine Arbeit als freier Redner für Hochzeiten, Trauerfeiern und Kinderwillkommensfeste. Lass uns gemeinsam Deine Geschichte erzählen.",
+  "weddingTitle": "Deine Hochzeitszeremonie | Tom Salzlechner - Freier Redner",
+  "weddingDescription": "Individuelle Hochzeitszeremonien, die Eure Liebe feiern. Gemeinsam gestalten wir einen unvergesslichen Moment.",
 
-  "weddingTitle": "Deine persönliche Hochzeitszeremonie | Tom Salzlechner - Freier Redner",
-  "weddingDescription": "Individuelle Hochzeitszeremonien, die Eure Liebe feiern. Gemeinsam gestalten wir einen unvergesslichen Moment, der zu Euch passt.",
+  "childCelebrationTitle": "Willkommensfest für Dein Kind | Tom Salzlechner",
+  "childCelebrationDescription": "Feiere die Ankunft Deines Kindes in einer persönlichen Zeremonie. Lass uns gemeinsam diesen neuen Abschnitt willkommen heißen.",
 
-  "childCelebrationTitle": "Herzliches Kinderwillkommensfest für Dein Kind | Tom Salzlechner - Freier Redner",
-  "childCelebrationDescription": "Gestalte eine liebevolle Willkommensfeier für Dein Kind. Gemeinsam feiern wir die Ankunft Deines kleinen Schatzes in einer persönlichen Zeremonie.",
+  "celebrationsTitle": "Lebens- und Trauerfeiern | Tom Salzlechner",
+  "celebrationsDescription": "Gestalte einen würdevollen Abschied für Deinen geliebten Menschen. Lass uns die schönen Erinnerungen feiern.",
 
-  "celebrationsTitle": "Würdevolle Lebens- und Trauerfeiern | Tom Salzlechner - Freier Redner",
-  "celebrationsDescription": "Gemeinsam gestalten wir einen persönlichen und würdevolles Abschied für Deinen geliebten Menschen. Lass uns die schönen Erinnerungen feiern.",
+  "moderationTitle": "Moderation für Feiern & Events | Tom Salzlechner",
+  "moderationDescription": "Begleite Deine Firmenfeier oder Dein Event mit professioneller Moderation. Lass uns unvergessliche Momente schaffen.",
 
-  "moderationTitle": "Professionelle Moderation für Firmenfeiern & Anlässe | Tom Salzlechner - Freier Redner",
-  "moderationDescription": "Begleite Deine Firmenfeier oder Dein Event mit professioneller und humorvoller Moderation. Gemeinsam schaffen wir unvergessliche Momente für Deine Gäste.",
+  "imprintTitle": "Impressum | Tom Salzlechner",
+  "imprintDescription": "Rechtliche Informationen und Kontaktdetails zu Tom Salzlechner, dem Inhaber dieser Webseite.",
 
-  "imprintTitle": "Impressum | Tom Tom Salzlechner - Freier Redner",
-  "imprintDescription": "Rechtliche Informationen und Kontaktdetails zu Tom Salzlechner. Erfahre mehr über den Inhaber dieser Webseite."
+
+  "quote4": "Ich möchte Menschen so ehren, dass sich die Gäste nicht über die Länge der Zeremonie beschweren.",
+  "quoteChild1": "Ein Kind stellt das Leben auf den Kopf, also lasst uns dieses neue Leben begrüßen.",
+  "quoteChild2": "Kinder sind unsere Zukunft und zur Zukunft darf man schon hallo sagen.",
+  "quoteChild3": "Wenn neues Leben nicht gefeiert wird, was dann?",
+  "quoteChild4": "Wir lernen eine neue Liebe kennen - dafür darf man mit seinen Liebsten anhalten!",
+  "quoteFuneral1": "Nicht nur den Tod betrauern, sondern das Leben und die Erinnerungen feiern.",
+  "quoteFuneral2": "Ein geliebter Mensch hat uns verlassen, die passende Worte zu finden ist schwer, aber wichtig!",
+  "quoteFuneral3": "Gestalten wir eine Lebensfeier, statt einer Trauerfeier.",
+  "quoteModeration1": "Jedes Fest verdient einen passenden Rahmen!",
+  "quoteModeration2": "Auch für Eure Veranstaltung finde ich die richtigen Worte.",
+  "quoteModeration3": "Gemeinsam können wir nicht nur einen Moment, sondern nachhaltige Erinnerungen schaffen"
 }

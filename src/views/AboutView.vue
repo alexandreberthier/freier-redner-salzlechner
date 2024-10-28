@@ -47,7 +47,7 @@ const {t} = useI18n()
 
 const quotes: ComputedRef<Quote[]> = computed(() => [
   {
-    text: t('quote1'),
+    text: t('quote4'),
     author: 'Freie Redner'
   },
   {
@@ -57,6 +57,10 @@ const quotes: ComputedRef<Quote[]> = computed(() => [
   {
     text: t('quote3'),
     author: 'Freie Redner'
+  },
+  {
+    text: t('quote1'),
+    author: 'Tom'
   }
 ])
 

@@ -136,7 +136,38 @@ router.afterEach((to) => {
         i18n.global.t(meta.metaDescriptionKey, {}, currentLang)
     );
   }
+
+  // Set canonical link
+  const canonicalLink = document.querySelector('link[rel="canonical"]') || document.createElement('link');
+  canonicalLink.setAttribute('rel', 'canonical');
+  canonicalLink.setAttribute('href', `https://www.freier-redner-tom.at${to.fullPath}`);
+  if (!canonicalLink.parentNode) {
+    document.head.appendChild(canonicalLink);
+  }
+
+  // Set hreflang links
+  const hreflangLinks = document.querySelectorAll('link[rel="alternate"][hreflang]');
+  hreflangLinks.forEach(link => link.parentNode?.removeChild(link));
+
+  const languages = ['de', 'en'];
+  languages.forEach(lang => {
+    const hreflangLink = document.createElement('link');
+    hreflangLink.setAttribute('rel', 'alternate');
+    hreflangLink.setAttribute('hreflang', lang);
+    hreflangLink.setAttribute('href', `https://www.freier-redner-tom.at/${lang}${to.fullPath.replace(/^\/(de|en)/, '')}`);
+    document.head.appendChild(hreflangLink);
+  });
+
+  // Set x-default hreflang link
+  const xDefaultLink = document.createElement('link');
+  xDefaultLink.setAttribute('rel', 'alternate');
+  xDefaultLink.setAttribute('hreflang', 'x-default');
+  xDefaultLink.setAttribute('href', `https://www.freier-redner-tom.at/de${to.fullPath.replace(/^\/(de|en)/, '')}`);
+  document.head.appendChild(xDefaultLink);
+
+  // Set lang attribute on html element
   document.documentElement.lang = currentLang;
 });
+
 
 export default router;

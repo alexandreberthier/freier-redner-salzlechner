@@ -24,17 +24,21 @@ const {t} = useI18n()
 
 const quotes: ComputedRef<Quote[]> = computed(() => [
   {
-    text: t('guestComment1'),
-    author: 'Benjamin'
+    text: t('quoteChild1'),
+    author: 'Tom'
   },
   {
-    text: t('guestComment2'),
-    author: 'Maxi und Philip'
+    text: t('quoteChild2'),
+    author: 'Tom'
   },
   {
-    text: t('guestComment3'),
-    author: 'Elisabeth'
-  }
+    text: t('quoteChild3'),
+    author: 'Tom'
+  },
+  {
+    text: t('quoteChild4'),
+    author: 'Tom'
+  },
 ])
 
 const faqs = computed(() => [

@@ -10,7 +10,7 @@ const messages = {
 
 const i18n = createI18n({
     legacy: false,
-    locale: 'de', // Standard-Sprache setzen
+    locale: 'de',
     fallbackLocale: 'en',
     messages,
 });
