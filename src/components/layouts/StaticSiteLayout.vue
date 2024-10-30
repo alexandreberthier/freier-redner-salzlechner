@@ -19,6 +19,7 @@
         <p class="main-text2" v-html="mainText2"></p>
         <div class="image-wrapper">
           <img :src="getImage(image2)" :alt="image2alt">
+          <span v-if="isWeddingPicture" class="credit">(c) Claudia Weaver</span>
         </div>
       </div>
     </section>
@@ -66,6 +67,7 @@ defineProps<{
   mainText2: string
   faqs: FaqItem[]
   quotes: Quote[]
+  isWeddingPicture?: boolean
 }>()
 
 const topWrapper = ref(null)
@@ -143,6 +145,16 @@ onMounted(() => {
   .image-wrapper {
     height: 250px;
     width: 100%;
+    position: relative;
+
+    .credit {
+      position: absolute;
+      top: 100%;
+      right: 5px;
+      color: var(--dark-green);
+      font-style: italic;
+      font-size: 14px
+    }
 
     img {
       width: 320px;

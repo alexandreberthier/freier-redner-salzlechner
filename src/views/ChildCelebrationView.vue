@@ -11,6 +11,7 @@
       :mainText2="t('childCelebrationMainText2')"
       :faqs="faqs"
       :quotes="quotes"
+      :is-wedding-picture="true"
   >
   </StaticSiteLayout>
 </template>
