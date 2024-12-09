@@ -2,9 +2,9 @@
   <StaticSiteLayout
       :header="t('weddingHeader')"
       :subHeaderText="t('weddingSubText')"
-      :image1="'img_tom3.webp'"
+      :image1="'Freier-Redner-Tom_1.webp'"
       image1alt="Laura und Tom"
-      :image2="'img_tom10.webp'"
+      :image2="'Freier-Redner-Tom_58.webp'"
       image2alt="Hochzeit von Philip und Maxi"
       :main-text-header="t('weddingMainTextHeader')"
       :mainText1="t('weddingMainText1')"

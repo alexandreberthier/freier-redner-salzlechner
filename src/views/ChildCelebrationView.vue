@@ -2,16 +2,16 @@
   <StaticSiteLayout
       :header="t('childCelebrationHeaderSmall')"
       :subHeaderText="t('childCelebrationSubText')"
-      :image1="'img_tom13.webp'"
+      :image1="'Freier-Redner-Tom_65.webp'"
       image1alt="Lou"
-      :image2="'img_tom7.webp'"
+      :image2="'Freier-Redner-Tom_108.webp'"
       image2alt="Tom"
       :main-text-header="t('childCelebrationMainTextHeader')"
       :mainText1="t('childCelebrationMainText1')"
       :mainText2="t('childCelebrationMainText2')"
       :faqs="faqs"
       :quotes="quotes"
-      :is-wedding-picture="true"
+
   >
   </StaticSiteLayout>
 </template>

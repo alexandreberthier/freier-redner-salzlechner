@@ -4,7 +4,7 @@
       :subHeaderText="t('funeralSubText')"
       :image1="'img_tom18.webp'"
       image1alt="Tom Schwarz Weiss"
-      :image2="'img_tom5.webp'"
+      :image2="'Freier-Redner-Tom_130.webp'"
       image2alt="Messestand Freie Redner"
       :main-text-header="t('funeralMainTextHeader')"
       :mainText1="t('funeralMainText1')"

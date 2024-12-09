@@ -4,14 +4,13 @@
       :subHeaderText="t('moderationSubText')"
       :image1="'img_tom19.webp'"
       image1alt="Tom mit Mikrofon"
-      :image2="'img_tom15.webp'"
+      :image2="'Freier-Redner-Tom_5.webp'"
       image2alt="Tom mit Sonnenbrille"
       :main-text-header="t('moderationMainTextHeader')"
       :mainText1="t('moderationMainText1')"
       :mainText2="t('moderationMainText2')"
       :faqs="faqs"
       :quotes="quotes"
-      :is-wedding-picture="true"
   >
   </StaticSiteLayout>
 </template>

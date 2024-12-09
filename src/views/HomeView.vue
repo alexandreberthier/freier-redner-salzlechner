@@ -24,7 +24,7 @@
         <img class="image1" :src="getImage('img_tom1.webp')" alt="Tom und Benji">
       </div>
       <div ref="image2" class="image-wrapper fade-up">
-        <img class="image2" :src="getImage('img_tom5.webp')" alt="Austellung Freie Redner">
+        <img class="image2" :src="getImage('Freier-Redner-Tom_98.webp')" alt="Austellung Freie Redner">
       </div>
       <div ref="image3" class="image-wrapper fade-up">
         <img class="image3" :src="getImage('img_tom6.webp')" alt="Tom und Benni">
@@ -269,7 +269,7 @@ const contactOptions: Ref<ContactOption[]> = ref([
 
 const services: ComputedRef<Service[]> = computed(() => [
   {
-    image: 'img_tom3.webp',
+    image: 'img_tom10.webp',
     alt: t('weddingHeader'),
     heading: t('weddingHeader'),
     text: t('homeServiceCardText1'),
