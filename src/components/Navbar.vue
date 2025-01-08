@@ -5,8 +5,7 @@
           @click="closeMenu"
           :to="{name: 'home'}">
         <div class="logo-wrapper">
-          <!--<img :src="getImage('ic_logo.png')" alt="logo">-->
-          <p>TS</p>
+          <img :src="getImage('ic_tom_logo.png')" alt="logo">
         </div>
       </router-link>
     </div>
@@ -34,7 +33,7 @@
         <LanguageSelection/>
         <Toggle/>
       </div>
-      <DynamicButton
+      <DynamicButton class="hide-mobile"
           :button-type="ButtonType.Primary"
           :has-link="true"
           path-name="home"
@@ -55,6 +54,7 @@ import DynamicButton from "@/components/DynamicButton.vue";
 import { useI18n } from "vue-i18n";
 import LanguageSelection from "@/components/LanguageSelection.vue";
 import Toggle from "@/components/Toggle.vue";
+import {getImage} from "@/utils/ImageUtils";
 
 const { t } = useI18n()
 
@@ -150,6 +150,10 @@ const links: ComputedRef<Link[]> = computed(() => [
   align-items: center;
 }
 
+.hide-mobile {
+  display: none;
+}
+
 .nav-wrapper {
   width: 100%;
   box-sizing: border-box;
@@ -159,7 +163,7 @@ const links: ComputedRef<Link[]> = computed(() => [
   align-items: center;
   justify-content: space-between;
   position: relative;
-  padding: 5px 20px 5px 0;
+  padding: 5px 20px;
   transition: all 200ms ease-in-out;
 
   &.shrink {
@@ -180,15 +184,9 @@ const links: ComputedRef<Link[]> = computed(() => [
       align-items: center;
       justify-content: center;
 
-      p {
-        padding-left: 20px;
-        font-family: Playfair, sans-serif;
-        font-size: 40px;
-      }
-
       img {
-        width: 80px;
-        height: 80px;
+        width: 125px;
+        height: auto;
       }
     }
   }
@@ -294,6 +292,19 @@ const links: ComputedRef<Link[]> = computed(() => [
   }
 }
 
+@media (min-width: 740px) {
+  .nav-wrapper {
+    .left-content {
+      .logo-wrapper {
+        img {
+          width: 240px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
 
 @media (min-width: 1200px) {
   .hide-desktop {
@@ -301,15 +312,17 @@ const links: ComputedRef<Link[]> = computed(() => [
   }
 
   .nav-wrapper {
+    justify-content: space-between;
+    gap: 80px;
     height: 110px;
-    padding: 5px 25px 5px 0;
+    padding: 5px 25px;
 
     .right-content {
       .link-menu {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 35px;
+        gap: 20px;
         position: static;
         height: 100%;
         z-index: 50;
@@ -327,11 +340,21 @@ const links: ComputedRef<Link[]> = computed(() => [
         display: none;
       }
     }
+
+    .left-content {
+      .logo-wrapper {
+        img {
+          width: 200px;
+          height: auto;
+        }
+      }
+    }
   }
 
   .wrapper {
     display: flex;
     gap: 10px;
+    margin-left: auto;
 
     .show-desktop {
       display: flex;
@@ -339,5 +362,27 @@ const links: ComputedRef<Link[]> = computed(() => [
       align-items: center;
     }
   }
+}
+
+@media (min-width: 1560px) {
+  .hide-mobile {
+    display: flex;
+  }
+
+  .wrapper {
+    margin-left: unset;
+  }
+
+  .nav-wrapper {
+    .left-content {
+      .logo-wrapper {
+        img {
+          width: 260px;
+          height: auto;
+        }
+      }
+    }
+  }
+
 }
 </style>
