@@ -13,14 +13,9 @@
       :quotes="quotes"
   >
     <section class="bottom-section">
-      <div class="image-wrapper">
-        <iframe width="100%" height="100%"
-                src="https://www.youtube.com/embed/1lKrSjl0ZfY?si=Oo4WPTniUHe8gDdj"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
-      </div>
+      <a href="https://freieredner.at/redner/tom-salzlechner/" target="_blank" class="image-wrapper">
+        <img :src="getImage('ic_freie_redner_abnner.jpg')" alt="">
+      </a>
       <div class="skill-flex">
         <div
             v-for="(skill, index) in skills"
@@ -122,28 +117,31 @@ const skills = computed(() => [
   display: flex;
   flex-direction: column;
   gap: 32px;
+  margin-top: 70px;
 
   .image-wrapper {
     border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    iframe {
+    img {
       width: 100%;
-      aspect-ratio: 16 / 9;
-      border-radius: 14px;
+      max-width: 640px;
+      height: auto;
     }
   }
 
   .skill-flex {
     display: flex;
-    flex-direction: column;
     gap: 16px;
-    align-items: flex-start;
     flex-wrap: wrap;
 
     .skill {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 32px;
+      flex: 1 1 200px;
 
       .icon-wrapper {
         img {
@@ -157,20 +155,6 @@ const skills = computed(() => [
 
 @media (min-width: 1200px) {
   .bottom-section {
-    flex-direction: row;
-    gap: unset;
-    justify-content: space-between;
-    align-items: center;
-
-    .image-wrapper {
-      iframe {
-        width: 400px;
-        aspect-ratio: 16 / 9;
-        border-radius: 14px;
-        height: auto;
-      }
-    }
-
     .skill-flex {
       gap: 32px;
     }
@@ -179,22 +163,12 @@ const skills = computed(() => [
 
 @media (min-width: 1920px) {
   .bottom-section {
-    flex-direction: row;
     gap: 60px;
-    justify-content: center;
 
-
-    .image-wrapper {
-      iframe {
-        width: 600px;
-        aspect-ratio: 16 / 9;
-        border-radius: 14px;
-        height: auto;
-      }
-    }
 
     .skill-flex {
       gap: 50px;
+      justify-content: center;
     }
   }
 }
