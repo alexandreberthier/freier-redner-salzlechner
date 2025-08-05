@@ -118,6 +118,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 70px;
+    overflow: hidden;
 }
 
 @media (min-width: 740px) {

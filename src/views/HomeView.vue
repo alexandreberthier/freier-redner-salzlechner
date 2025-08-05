@@ -27,7 +27,7 @@
         <img class="image2" :src="getImage('Freier-Redner-Tom_98.webp')" alt="Austellung Freie Redner">
       </div>
       <div ref="image3" class="image-wrapper fade-up">
-        <img class="image3" :src="getImage('img_tom6.webp')" alt="Tom und Benni">
+        <img class="image3" :src="getImage('tom_startNEU.webp')" alt="Tom">
       </div>
     </section>
   </div>

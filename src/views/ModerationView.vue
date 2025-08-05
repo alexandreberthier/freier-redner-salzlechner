@@ -2,8 +2,8 @@
   <StaticSiteLayout
       :header="t('moderationHeader')"
       :subHeaderText="t('moderationSubText')"
-      :image1="'img_tom19.webp'"
-      image1alt="Tom mit Mikrofon"
+      :image1="'tom_firmenfeierNEU.webp'"
+      image1alt="Tom"
       :image2="'Freier-Redner-Tom_5.webp'"
       image2alt="Tom mit Sonnenbrille"
       :main-text-header="t('moderationMainTextHeader')"
