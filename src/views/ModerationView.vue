@@ -69,4 +69,8 @@ const faqs = computed(() => [
 
 <style scoped>
 
+:deep(.top-wrapper .image-wrapper:first-of-type img) {
+  object-position: 50% 25%;
+}
+
 </style>
