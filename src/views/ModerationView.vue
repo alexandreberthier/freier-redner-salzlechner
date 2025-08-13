@@ -3,6 +3,7 @@
       :header="t('moderationHeader')"
       :subHeaderText="t('moderationSubText')"
       :image1="'tom_firmenfeierNEU.webp'"
+      image1credit="Sarah Karner Photography"
       image1alt="Tom"
       :image2="'Freier-Redner-Tom_5.webp'"
       image2alt="Tom mit Sonnenbrille"

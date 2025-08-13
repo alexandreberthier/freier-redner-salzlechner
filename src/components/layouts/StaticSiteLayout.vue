@@ -9,6 +9,7 @@
       <div ref="topWrapper" class="top-wrapper">
         <div class="image-wrapper">
           <img :src="getImage(image1)" :alt="image1alt">
+          <span v-if="image1credit">{{image1credit}}</span>
         </div>
         <div class="heading-text">
           <h2>{{ mainTextHeader }}</h2>
@@ -19,7 +20,7 @@
         <p class="main-text2" v-html="mainText2"></p>
         <div class="image-wrapper">
           <img :src="getImage(image2)" :alt="image2alt">
-          <span v-if="isWeddingPicture" class="credit">(c) Claudia Weaver</span>
+          <span v-if="image2credit">{{image2credit}}</span>>
         </div>
       </div>
     </section>
@@ -59,8 +60,10 @@ defineProps<{
   header: string,
   subHeaderText: string
   image1: string,
+  image1credit?: string,
   image1alt: string,
   image2: string,
+  image2credit?: string,
   image2alt: string,
   mainTextHeader: string
   mainText1: string,
@@ -147,13 +150,17 @@ onMounted(() => {
     width: 100%;
     position: relative;
 
-    .credit {
+    span {
       position: absolute;
-      top: 100%;
-      right: 5px;
-      color: var(--dark-green);
+      bottom: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      color: var(--white);
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 14px;
       font-style: italic;
-      font-size: 14px
+      white-space: nowrap;
     }
 
     img {
@@ -282,6 +289,7 @@ onMounted(() => {
     .image-wrapper {
       height: 380px;
       width: 415px;
+      position: relative;
 
       img {
         min-width: unset;

@@ -24,10 +24,11 @@
         <img class="image1" :src="getImage('img_tom1.webp')" alt="Tom und Benji">
       </div>
       <div ref="image2" class="image-wrapper fade-up">
-        <img class="image2" :src="getImage('Freier-Redner-Tom_98.webp')" alt="Austellung Freie Redner">
+        <img class="image2" :src="getImage('tom_start2NEU.webp')" alt="Hochzeit">
       </div>
       <div ref="image3" class="image-wrapper fade-up">
         <img class="image3" :src="getImage('tom_startNEU.webp')" alt="Tom">
+        <span>Sarah Karner Photography</span>
       </div>
     </section>
   </div>
@@ -35,24 +36,24 @@
   <section class="text-section">
     <div ref="textSection" class="text-wrapper fade-up">
       <div class="top-section">
-        <h2>{{ t('homeBannerHeader')}}</h2>
-        <p>{{t('homeBannerText1') }}</p>
+        <h2>{{ t('homeBannerHeader') }}</h2>
+        <p>{{ t('homeBannerText1') }}</p>
       </div>
       <div class="bottom-section">
         <div class="left">
-          <p>{{t('homeBannerText2') }}</p>
-          <p>{{t('homeBannerText3') }}</p>
+          <p>{{ t('homeBannerText2') }}</p>
+          <p>{{ t('homeBannerText3') }}</p>
         </div>
         <div class="right">
-          <p>{{t('homeBannerText4') }}</p>
-          <p>{{t('homeBannerText5') }}</p>
+          <p>{{ t('homeBannerText4') }}</p>
+          <p>{{ t('homeBannerText5') }}</p>
         </div>
       </div>
     </div>
   </section>
 
   <section class="slider-section">
-    <h2>{{t('homeServiceSectionHeader') }}</h2>
+    <h2>{{ t('homeServiceSectionHeader') }}</h2>
     <DotSlider>
       <ServiceCard v-for="(service, index) in services" :key="index" :service="service"/>
     </DotSlider>
@@ -68,7 +69,7 @@
 
     <section id="contact" class="contact-section">
       <h2>{{ t('contactHeader') }}</h2>
-      <p>{{t('contactSubText') }}</p>
+      <p>{{ t('contactSubText') }}</p>
       <div class="contact-options">
         <a v-for="(option, index) in contactOptions"
            :key="index"
@@ -383,6 +384,21 @@ onMounted(() => {
     overflow: hidden;
     border-radius: 20px;
     cursor: crosshair;
+    position: relative;
+    height: fit-content;
+
+    span {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      color: var(--white);
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-style: italic;
+      white-space: nowrap;
+    }
 
     img {
       object-fit: cover;

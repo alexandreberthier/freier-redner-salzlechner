@@ -6,6 +6,7 @@
       image1alt="Tom Schwarz Weiss"
       :image2="'tom_lebensfeierNEU.webp'"
       image2alt="Tom Schwarz Weis"
+      image2credit="Thomas Niedermüller"
       :main-text-header="t('funeralMainTextHeader')"
       :mainText1="t('funeralMainText1')"
       :mainText2="t('funeralMainText2')"
