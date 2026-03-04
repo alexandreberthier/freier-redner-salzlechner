@@ -152,7 +152,6 @@ import type {Service} from "@/models/PropInterfaces";
 import {ButtonType, InputType} from "@/models/Enums";
 import DynamicAccordion from "@/components/DynamicAccordion.vue";
 import DynamicInputField from "@/components/DynamicInputField.vue";
-import emailjs from '@emailjs/browser';
 import DotSlider from "@/components/DotSlider.vue";
 import {useI18n} from "vue-i18n";
 
@@ -182,11 +181,9 @@ const errorMessage: Ref<string> = ref('')
 const isLoading = ref(false)
 const buttonDisabled = ref(false)
 
-const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-const USER_ID = import.meta.env.VITE_EMAILJS_USER_ID;
+const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 
-function sendContactForm() {
+async function sendContactForm() {
   let isValid = true;
 
   const fields = [
@@ -207,7 +204,7 @@ function sendContactForm() {
   })
 
   if (!isValid) {
-    nextTick(() => {
+    await nextTick(() => {
       const firstErrorElement = document.querySelector('.input-wrapper .error');
       if (firstErrorElement) {
         firstErrorElement.scrollIntoView({behavior: 'smooth', block: 'center'});
@@ -218,32 +215,51 @@ function sendContactForm() {
 
   isLoading.value = true;
   buttonDisabled.value = true;
+  successMessage.value = '';
+  errorMessage.value = '';
 
-  const templateParams = {
-    firstName: firstName.value,
-    lastName: lastName.value,
-    email: email.value,
-    phoneNumber: phoneNumber.value,
-    message: message.value
-  };
+  try {
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_ACCESS_KEY,
+        subject: 'Neue Kontaktanfrage von freier-redner-tom.at',
+        from_name: `${firstName.value} ${lastName.value}`,
+        email: email.value,
+        message: message.value,
+        Vorname: firstName.value,
+        Nachname: lastName.value,
+        Telefon: phoneNumber.value,
+        Datum: new Date().toLocaleString('de-AT', {
+          dateStyle: 'short',
+          timeStyle: 'short'
+        })
+      })
+    });
 
-  emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID)
-      .then(() => {
-        successMessage.value = t('successMessage')
-        firstName.value = '';
-        lastName.value = '';
-        email.value = '';
-        phoneNumber.value = '';
-        message.value = '';
-      })
-      .catch((error: any) => {
-        errorMessage.value = t('formErrorMessage')
-        console.error(error);
-      })
-      .finally(() => {
-        isLoading.value = false;
-        buttonDisabled.value = false;
-      })
+    const result = await response.json();
+
+    if (result.success) {
+      successMessage.value = t('successMessage');
+      firstName.value = '';
+      lastName.value = '';
+      email.value = '';
+      phoneNumber.value = '';
+      message.value = '';
+    } else {
+      errorMessage.value = t('formErrorMessage');
+      console.error('Web3Forms Error:', result);
+    }
+  } catch (error) {
+    errorMessage.value = t('formErrorMessage');
+    console.error('Network Error:', error);
+  } finally {
+    isLoading.value = false;
+    buttonDisabled.value = false;
+  }
 }
 
 

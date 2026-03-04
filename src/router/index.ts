@@ -129,45 +129,78 @@ router.afterEach((to) => {
     document.title = i18n.global.t(meta.titleKey, {}, currentLang);
   }
 
-  const metaDescription = document.querySelector('meta[name="description"]');
-  if (metaDescription && meta.metaDescriptionKey) {
+  let metaDescription = document.querySelector('meta[name="description"]') as HTMLMetaElement;
+  if (!metaDescription) {
+    metaDescription = document.createElement('meta');
+    metaDescription.setAttribute('name', 'description');
+    document.head.appendChild(metaDescription);
+  }
+  if (meta.metaDescriptionKey) {
     metaDescription.setAttribute(
         'content',
         i18n.global.t(meta.metaDescriptionKey, {}, currentLang)
     );
   }
 
-  // Set canonical link
-  const canonicalLink = document.querySelector('link[rel="canonical"]') || document.createElement('link');
-  canonicalLink.setAttribute('rel', 'canonical');
-  canonicalLink.setAttribute('href', `https://www.freier-redner-tom.at${to.fullPath}`);
-  if (!canonicalLink.parentNode) {
-    document.head.appendChild(canonicalLink);
+  if (meta.titleKey) {
+    updateMetaTag('og:title', i18n.global.t(meta.titleKey, {}, currentLang));
+  }
+  if (meta.metaDescriptionKey) {
+    updateMetaTag('og:description', i18n.global.t(meta.metaDescriptionKey, {}, currentLang));
+  }
+  updateMetaTag('og:url', `https://www.freier-redner-tom.at${to.fullPath}`);
+  updateMetaTag('og:type', 'website');
+  updateMetaTag('og:locale', currentLang === 'de' ? 'de_AT' : 'en_US');
+
+  updateMetaTag('twitter:card', 'summary_large_image', 'name');
+  if (meta.titleKey) {
+    updateMetaTag('twitter:title', i18n.global.t(meta.titleKey, {}, currentLang), 'name');
+  }
+  if (meta.metaDescriptionKey) {
+    updateMetaTag('twitter:description', i18n.global.t(meta.metaDescriptionKey, {}, currentLang), 'name');
   }
 
-  // Set hreflang links
-  const hreflangLinks = document.querySelectorAll('link[rel="alternate"][hreflang]');
-  hreflangLinks.forEach(link => link.parentNode?.removeChild(link));
+  let canonicalLink = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
+  if (!canonicalLink) {
+    canonicalLink = document.createElement('link');
+    canonicalLink.setAttribute('rel', 'canonical');
+    document.head.appendChild(canonicalLink);
+  }
+  canonicalLink.setAttribute('href', `https://www.freier-redner-tom.at${to.fullPath}`);
+
+  // ✅ Hreflang Links - alte entfernen
+  const existingHreflangLinks = document.querySelectorAll('link[rel="alternate"][hreflang]');
+  existingHreflangLinks.forEach(link => link.remove());
 
   const languages = ['de', 'en'];
+  const pathWithoutLocale = to.fullPath.replace(/^\/(de|en)/, '');
+
   languages.forEach(lang => {
     const hreflangLink = document.createElement('link');
     hreflangLink.setAttribute('rel', 'alternate');
     hreflangLink.setAttribute('hreflang', lang);
-    hreflangLink.setAttribute('href', `https://www.freier-redner-tom.at/${lang}${to.fullPath.replace(/^\/(de|en)/, '')}`);
+    hreflangLink.setAttribute('href', `https://www.freier-redner-tom.at/${lang}${pathWithoutLocale}`);
     document.head.appendChild(hreflangLink);
   });
 
-  // Set x-default hreflang link
   const xDefaultLink = document.createElement('link');
   xDefaultLink.setAttribute('rel', 'alternate');
   xDefaultLink.setAttribute('hreflang', 'x-default');
-  xDefaultLink.setAttribute('href', `https://www.freier-redner-tom.at/de${to.fullPath.replace(/^\/(de|en)/, '')}`);
+  xDefaultLink.setAttribute('href', `https://www.freier-redner-tom.at/de${pathWithoutLocale}`);
   document.head.appendChild(xDefaultLink);
 
-  // Set lang attribute on html element
   document.documentElement.lang = currentLang;
 });
 
+
+function updateMetaTag(property: string, content: string, attributeName: 'property' | 'name' = 'property') {
+  let metaTag = document.querySelector(`meta[${attributeName}="${property}"]`) as HTMLMetaElement;
+  if (!metaTag) {
+    metaTag = document.createElement('meta');
+    metaTag.setAttribute(attributeName, property);
+    document.head.appendChild(metaTag);
+  }
+  metaTag.setAttribute('content', content);
+}
 
 export default router;
