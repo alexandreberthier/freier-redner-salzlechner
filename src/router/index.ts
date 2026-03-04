@@ -128,7 +128,6 @@ router.afterEach((to) => {
   if (meta.titleKey) {
     document.title = i18n.global.t(meta.titleKey, {}, currentLang);
   }
-
   let metaDescription = document.querySelector('meta[name="description"]') as HTMLMetaElement;
   if (!metaDescription) {
     metaDescription = document.createElement('meta');
@@ -142,13 +141,24 @@ router.afterEach((to) => {
     );
   }
 
+  const pathWithoutLocale = to.path.replace(/^\/(de|en)/, '');
+  const canonicalUrl = `https://www.freier-redner-tom.at/${currentLang}${pathWithoutLocale}`;
+
+  let canonicalLink = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
+  if (!canonicalLink) {
+    canonicalLink = document.createElement('link');
+    canonicalLink.setAttribute('rel', 'canonical');
+    document.head.appendChild(canonicalLink);
+  }
+  canonicalLink.setAttribute('href', canonicalUrl);
+
   if (meta.titleKey) {
     updateMetaTag('og:title', i18n.global.t(meta.titleKey, {}, currentLang));
   }
   if (meta.metaDescriptionKey) {
     updateMetaTag('og:description', i18n.global.t(meta.metaDescriptionKey, {}, currentLang));
   }
-  updateMetaTag('og:url', `https://www.freier-redner-tom.at${to.fullPath}`);
+  updateMetaTag('og:url', canonicalUrl);
   updateMetaTag('og:type', 'website');
   updateMetaTag('og:locale', currentLang === 'de' ? 'de_AT' : 'en_US');
 
@@ -160,20 +170,10 @@ router.afterEach((to) => {
     updateMetaTag('twitter:description', i18n.global.t(meta.metaDescriptionKey, {}, currentLang), 'name');
   }
 
-  let canonicalLink = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
-  if (!canonicalLink) {
-    canonicalLink = document.createElement('link');
-    canonicalLink.setAttribute('rel', 'canonical');
-    document.head.appendChild(canonicalLink);
-  }
-  canonicalLink.setAttribute('href', `https://www.freier-redner-tom.at${to.fullPath}`);
-
-  // ✅ Hreflang Links - alte entfernen
   const existingHreflangLinks = document.querySelectorAll('link[rel="alternate"][hreflang]');
   existingHreflangLinks.forEach(link => link.remove());
 
   const languages = ['de', 'en'];
-  const pathWithoutLocale = to.fullPath.replace(/^\/(de|en)/, '');
 
   languages.forEach(lang => {
     const hreflangLink = document.createElement('link');
@@ -192,7 +192,6 @@ router.afterEach((to) => {
   document.documentElement.lang = currentLang;
 });
 
-
 function updateMetaTag(property: string, content: string, attributeName: 'property' | 'name' = 'property') {
   let metaTag = document.querySelector(`meta[${attributeName}="${property}"]`) as HTMLMetaElement;
   if (!metaTag) {
@@ -202,5 +201,6 @@ function updateMetaTag(property: string, content: string, attributeName: 'proper
   }
   metaTag.setAttribute('content', content);
 }
+
 
 export default router;
